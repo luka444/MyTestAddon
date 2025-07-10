@@ -7,6 +7,7 @@
         "security/res_groups.xml",
         "views/test_model_views.xml",
         "wizard/test_model_mass_change_users_views.xml",
+        "wizard/import_test_wizard_views.xml",
         "views/menus.xml",
     ]
 }

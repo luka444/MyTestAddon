@@ -13,4 +13,11 @@
         parent="new_module_menu_root"
         sequence="5"/>
 
+    <menuitem
+        id="import_test_menu"
+        name="Import"
+        parent="new_module_menu_root"
+        action="import_test_wizard_action"
+        sequence="10"/>
+
 </odoo>
