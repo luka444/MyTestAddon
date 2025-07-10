@@ -21,6 +21,12 @@ class TestModel(models.Model):
         comodel_name="hr.employee",
         compute="_compute_employee_id",
     )
+    story_point = fields.Integer()
+    is_manager = fields.Boolean(compute="_compute_is_manager")
+
+    @api.depends_context("uid")
+    def _compute_is_manager(self):
+        self.is_manager = self.env.user.has_group("new_module.new_module_manager")
 
     def _compute_employee_id(self):
         for rec in self:

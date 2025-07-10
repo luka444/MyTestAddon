@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="new_module_category" model="ir.module.category">
+        <field name="name">New Module Categroy</field>
+    </record>
+
+    <record id="new_module_user" model="res.groups">
+        <field name="name">User</field>
+        <field name="category_id" ref="new_module.new_module_category"/>
+    </record>
+
+     <record id="new_module_manager" model="res.groups">
+        <field name="name">Manager</field>
+        <field name="category_id" ref="new_module.new_module_category"/>
+    </record>
+
+</odoo>
