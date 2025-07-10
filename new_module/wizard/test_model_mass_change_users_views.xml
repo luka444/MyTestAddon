@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="test_model_change_mass_users_view_form" model="ir.ui.view">
+        <field name="name">test.model.mass.change.users.view.form</field>
+        <field name="model">test.model.mass.change.users.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="user_id"/>
+                        </group>
+                    </group>
+                </sheet>
+                <footer>
+                    <button string="Apply" type="object" name="apply_mass_change" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="model_name_action" model="ir.actions.act_window">
+        <field name="name">Change users</field>
+        <field name="res_model">test.model.mass.change.users.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+</odoo>

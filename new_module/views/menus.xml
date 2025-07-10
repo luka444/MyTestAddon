@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+        id="new_module_menu_root"
+        name="New Module"
+        sequence="10"/>
+    
+    <menuitem
+        id="test_model_menu"
+        name="test model"
+        action="test_model_action"
+        parent="new_module_menu_root"
+        sequence="5"/>
+
+</odoo>
