@@ -6,18 +6,6 @@
         <div class="container">
             <h1>Product Catalog</h1>
             <t t-if="products">
-            <!-- <ul>
-                <t t-foreach="products" t-as="product">
-                <li>
-                    <h3><t t-esc="product.name"/></h3>
-                    <p><t t-esc="product.description"/></p>
-                    <p><strong>Price:</strong> $<t t-esc="product.list_price"/></p>
-                    <t t-if="product.image_1920">
-                        <img t-att-src="'data:image/png;base64,%s' % product.image_1920.decode('utf-8')" class="card-img-top" style="width: 200px; height: 200px;"/>
-                    </t>
-                </li>
-                </t>
-            </ul> -->
                 <form method="get" action="/product" class="mb-4">
                     <div class="input-group">
                         <input type="text" name="search" t-att-value="search" class="form-control" placeholder="Search by product name..."/>
@@ -71,7 +59,7 @@
                     </t>
                     </ul>
                 </div>
-                </t>
+            </t>
         </div>
         </t>
     </template>
